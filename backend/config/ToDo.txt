@@ -1,0 +1,16 @@
+Posibles mejoras para el futuro
+Variables de entorno (con .env y getenv() o $_ENV) para ocultar credenciales:
+
+php
+Copiar
+Editar
+$host = getenv("DB_HOST");
+$user = getenv("DB_USER");
+Encapsular en una función o clase si vas a reutilizar conexiones múltiples veces (por ejemplo, patrón Singleton).
+
+Soporte para UTF-8 si manejás caracteres especiales:
+
+php
+Copiar
+Editar
+$conn->set_charset("utf8mb4");
